@@ -1,0 +1,4276 @@
+{
+ "version": "1.1",
+ "updated": "2026-08-13",
+ "note": "테마 분류 사전. keywords = 뉴스 제목/본문 매칭용, weight는 스코어 가중치. stocks의 role: leader(대장주) / core(주도주) / related(관련주)",
+ "themes": [
+  {
+   "id": "kr-hbm",
+   "market": "KR",
+   "name": "반도체 · HBM/고대역폭메모리",
+   "sector": "IT",
+   "summary": "AI 서버용 고대역폭 메모리 및 후공정 패키징 밸류체인",
+   "keywords": [
+    {
+     "k": "HBM",
+     "w": 3
+    },
+    {
+     "k": "고대역폭",
+     "w": 3
+    },
+    {
+     "k": "HBM4",
+     "w": 3
+    },
+    {
+     "k": "TSV",
+     "w": 2
+    },
+    {
+     "k": "하이브리드 본딩",
+     "w": 2
+    },
+    {
+     "k": "D램",
+     "w": 2
+    },
+    {
+     "k": "DDR5",
+     "w": 2
+    },
+    {
+     "k": "메모리 가격",
+     "w": 2
+    },
+    {
+     "k": "엔비디아 공급",
+     "w": 2
+    },
+    {
+     "k": "SK하이닉스",
+     "w": 2
+    },
+    {
+     "k": "삼성전자",
+     "w": 1
+    },
+    {
+     "k": "반도체",
+     "w": 1
+    },
+    {
+     "k": "삼전닉스",
+     "w": 3
+    },
+    {
+     "k": "삼전",
+     "w": 2
+    },
+    {
+     "k": "하이닉스",
+     "w": 3
+    },
+    {
+     "k": "메모리",
+     "w": 2
+    },
+    {
+     "k": "반도체주",
+     "w": 3
+    },
+    {
+     "k": "낸드",
+     "w": 2
+    },
+    {
+     "k": "적층",
+     "w": 2
+    },
+    {
+     "k": "팹",
+     "w": 1
+    },
+    {
+     "k": "전공정",
+     "w": 2
+    },
+    {
+     "k": "웨이퍼 투입",
+     "w": 2
+    }
+   ],
+   "stocks": [
+    {
+     "name": "SK하이닉스",
+     "code": "000660",
+     "role": "leader"
+    },
+    {
+     "name": "삼성전자",
+     "code": "005930",
+     "role": "leader"
+    },
+    {
+     "name": "한미반도체",
+     "code": "042700",
+     "role": "core"
+    },
+    {
+     "name": "이오테크닉스",
+     "code": "039030",
+     "role": "core"
+    },
+    {
+     "name": "테크윙",
+     "code": "089030",
+     "role": "related"
+    },
+    {
+     "name": "피에스케이홀딩스",
+     "code": "031980",
+     "role": "related"
+    },
+    {
+     "name": "에스티아이",
+     "code": "039440",
+     "role": "related"
+    }
+   ],
+   "cross_market": false
+  },
+  {
+   "id": "kr-foundry",
+   "market": "KR",
+   "name": "반도체 · 파운드리/소부장",
+   "sector": "IT",
+   "summary": "파운드리 수주, 미세공정 전환에 따른 소재·부품·장비 수혜",
+   "keywords": [
+    {
+     "k": "파운드리",
+     "w": 3
+    },
+    {
+     "k": "TSMC",
+     "w": 2
+    },
+    {
+     "k": "미세공정",
+     "w": 2
+    },
+    {
+     "k": "EUV",
+     "w": 3
+    },
+    {
+     "k": "노광",
+     "w": 2
+    },
+    {
+     "k": "웨이퍼",
+     "w": 2
+    },
+    {
+     "k": "식각",
+     "w": 2
+    },
+    {
+     "k": "증착",
+     "w": 2
+    },
+    {
+     "k": "소부장",
+     "w": 2
+    },
+    {
+     "k": "2나노",
+     "w": 3
+    },
+    {
+     "k": "1.4나노",
+     "w": 3
+    },
+    {
+     "k": "특징주",
+     "w": 0
+    },
+    {
+     "k": "후공정",
+     "w": 2
+    },
+    {
+     "k": "패키징",
+     "w": 2
+    },
+    {
+     "k": "테스트 소켓",
+     "w": 2
+    },
+    {
+     "k": "프로브카드",
+     "w": 2
+    }
+   ],
+   "stocks": [
+    {
+     "name": "삼성전자",
+     "code": "005930",
+     "role": "leader"
+    },
+    {
+     "name": "DB하이텍",
+     "code": "000990",
+     "role": "core"
+    },
+    {
+     "name": "원익IPS",
+     "code": "240810",
+     "role": "core"
+    },
+    {
+     "name": "주성엔지니어링",
+     "code": "036930",
+     "role": "related"
+    },
+    {
+     "name": "동진쎄미켐",
+     "code": "005290",
+     "role": "related"
+    },
+    {
+     "name": "솔브레인",
+     "code": "357780",
+     "role": "related"
+    }
+   ],
+   "cross_market": false
+  },
+  {
+   "id": "kr-battery",
+   "market": "KR",
+   "name": "2차전지 · 배터리",
+   "sector": "소재",
+   "summary": "전기차·ESS용 배터리 셀과 양극재·음극재·전해질 소재",
+   "keywords": [
+    {
+     "k": "2차전지",
+     "w": 3
+    },
+    {
+     "k": "이차전지",
+     "w": 3
+    },
+    {
+     "k": "배터리",
+     "w": 3
+    },
+    {
+     "k": "양극재",
+     "w": 3
+    },
+    {
+     "k": "음극재",
+     "w": 3
+    },
+    {
+     "k": "전해액",
+     "w": 2
+    },
+    {
+     "k": "분리막",
+     "w": 2
+    },
+    {
+     "k": "전고체",
+     "w": 3
+    },
+    {
+     "k": "LFP",
+     "w": 2
+    },
+    {
+     "k": "46파이",
+     "w": 2
+    },
+    {
+     "k": "ESS",
+     "w": 2
+    },
+    {
+     "k": "IRA",
+     "w": 2
+    },
+    {
+     "k": "AMPC",
+     "w": 2
+    }
+   ],
+   "stocks": [
+    {
+     "name": "LG에너지솔루션",
+     "code": "373220",
+     "role": "leader"
+    },
+    {
+     "name": "삼성SDI",
+     "code": "006400",
+     "role": "leader"
+    },
+    {
+     "name": "POSCO홀딩스",
+     "code": "005490",
+     "role": "core"
+    },
+    {
+     "name": "에코프로비엠",
+     "code": "247540",
+     "role": "core"
+    },
+    {
+     "name": "엘앤에프",
+     "code": "066970",
+     "role": "related"
+    },
+    {
+     "name": "SK아이이테크놀로지",
+     "code": "361610",
+     "role": "related"
+    }
+   ],
+   "cross_market": false
+  },
+  {
+   "id": "kr-nuclear",
+   "market": "KR",
+   "name": "원자력 · SMR",
+   "sector": "산업재",
+   "summary": "대형원전 수출과 소형모듈원자로(SMR) 밸류체인",
+   "keywords": [
+    {
+     "k": "원전",
+     "w": 3
+    },
+    {
+     "k": "원자력",
+     "w": 3
+    },
+    {
+     "k": "SMR",
+     "w": 3
+    },
+    {
+     "k": "소형모듈원자로",
+     "w": 3
+    },
+    {
+     "k": "체코",
+     "w": 2
+    },
+    {
+     "k": "웨스팅하우스",
+     "w": 2
+    },
+    {
+     "k": "핵연료",
+     "w": 2
+    },
+    {
+     "k": "방폐장",
+     "w": 1
+    },
+    {
+     "k": "원전 수출",
+     "w": 3
+    },
+    {
+     "k": "계속운전",
+     "w": 2
+    }
+   ],
+   "stocks": [
+    {
+     "name": "두산에너빌리티",
+     "code": "034020",
+     "role": "leader"
+    },
+    {
+     "name": "한전기술",
+     "code": "052690",
+     "role": "core"
+    },
+    {
+     "name": "한전KPS",
+     "code": "051600",
+     "role": "core"
+    },
+    {
+     "name": "비에이치아이",
+     "code": "083650",
+     "role": "related"
+    },
+    {
+     "name": "우진",
+     "code": "105840",
+     "role": "related"
+    },
+    {
+     "name": "한국전력",
+     "code": "015760",
+     "role": "related"
+    }
+   ],
+   "cross_market": false
+  },
+  {
+   "id": "kr-defense",
+   "market": "KR",
+   "name": "방위산업 · K-방산",
+   "sector": "산업재",
+   "summary": "무기체계 수출 계약과 지정학 리스크에 연동",
+   "keywords": [
+    {
+     "k": "방산",
+     "w": 3
+    },
+    {
+     "k": "방위산업",
+     "w": 3
+    },
+    {
+     "k": "무기 수출",
+     "w": 3
+    },
+    {
+     "k": "K9",
+     "w": 3
+    },
+    {
+     "k": "천궁",
+     "w": 3
+    },
+    {
+     "k": "K2 전차",
+     "w": 3
+    },
+    {
+     "k": "폴란드",
+     "w": 2
+    },
+    {
+     "k": "중동 수주",
+     "w": 2
+    },
+    {
+     "k": "국방예산",
+     "w": 2
+    },
+    {
+     "k": "잠수함",
+     "w": 2
+    },
+    {
+     "k": "전투기",
+     "w": 2
+    },
+    {
+     "k": "NATO",
+     "w": 2
+    },
+    {
+     "k": "방산주",
+     "w": 3
+    },
+    {
+     "k": "드론",
+     "w": 2
+    },
+    {
+     "k": "록히드",
+     "w": 2
+    }
+   ],
+   "stocks": [
+    {
+     "name": "한화에어로스페이스",
+     "code": "012450",
+     "role": "leader"
+    },
+    {
+     "name": "현대로템",
+     "code": "064350",
+     "role": "core"
+    },
+    {
+     "name": "LIG넥스원",
+     "code": "079550",
+     "role": "core"
+    },
+    {
+     "name": "한국항공우주",
+     "code": "047810",
+     "role": "core"
+    },
+    {
+     "name": "한화시스템",
+     "code": "272210",
+     "role": "related"
+    },
+    {
+     "name": "풍산",
+     "code": "103140",
+     "role": "related"
+    }
+   ],
+   "cross_market": false
+  },
+  {
+   "id": "kr-ship",
+   "market": "KR",
+   "name": "조선 · 해운",
+   "sector": "산업재",
+   "summary": "친환경 선박 발주 사이클, 미국 MRO·조선 협력",
+   "keywords": [
+    {
+     "k": "조선",
+     "w": 3
+    },
+    {
+     "k": "수주",
+     "w": 2
+    },
+    {
+     "k": "LNG선",
+     "w": 3
+    },
+    {
+     "k": "컨테이너선",
+     "w": 2
+    },
+    {
+     "k": "선가",
+     "w": 3
+    },
+    {
+     "k": "클락슨",
+     "w": 3
+    },
+    {
+     "k": "MRO",
+     "w": 2
+    },
+    {
+     "k": "해운",
+     "w": 2
+    },
+    {
+     "k": "SCFI",
+     "w": 3
+    },
+    {
+     "k": "암모니아 추진",
+     "w": 2
+    }
+   ],
+   "stocks": [
+    {
+     "name": "HD한국조선해양",
+     "code": "009540",
+     "role": "leader"
+    },
+    {
+     "name": "한화오션",
+     "code": "042660",
+     "role": "core"
+    },
+    {
+     "name": "삼성중공업",
+     "code": "010140",
+     "role": "core"
+    },
+    {
+     "name": "HD현대미포",
+     "code": "010620",
+     "role": "related"
+    },
+    {
+     "name": "HMM",
+     "code": "011200",
+     "role": "related"
+    },
+    {
+     "name": "세진중공업",
+     "code": "075580",
+     "role": "related"
+    }
+   ],
+   "cross_market": false
+  },
+  {
+   "id": "kr-power",
+   "market": "KR",
+   "name": "전력기기 · 변압기",
+   "sector": "산업재",
+   "summary": "미국 노후 전력망 교체와 데이터센터 전력수요",
+   "keywords": [
+    {
+     "k": "변압기",
+     "w": 3
+    },
+    {
+     "k": "전력기기",
+     "w": 3
+    },
+    {
+     "k": "송배전",
+     "w": 3
+    },
+    {
+     "k": "전력망",
+     "w": 3
+    },
+    {
+     "k": "초고압 케이블",
+     "w": 3
+    },
+    {
+     "k": "그리드",
+     "w": 2
+    },
+    {
+     "k": "전력 수요",
+     "w": 2
+    },
+    {
+     "k": "HVDC",
+     "w": 3
+    },
+    {
+     "k": "전력기기주",
+     "w": 3
+    },
+    {
+     "k": "일진전기",
+     "w": 3
+    },
+    {
+     "k": "전선",
+     "w": 2
+    },
+    {
+     "k": "구리",
+     "w": 1
+    },
+    {
+     "k": "배전",
+     "w": 2
+    }
+   ],
+   "stocks": [
+    {
+     "name": "HD현대일렉트릭",
+     "code": "267260",
+     "role": "leader"
+    },
+    {
+     "name": "효성중공업",
+     "code": "298040",
+     "role": "core"
+    },
+    {
+     "name": "LS ELECTRIC",
+     "code": "010120",
+     "role": "core"
+    },
+    {
+     "name": "대한전선",
+     "code": "001440",
+     "role": "related"
+    },
+    {
+     "name": "LS",
+     "code": "006260",
+     "role": "related"
+    },
+    {
+     "name": "제룡전기",
+     "code": "033100",
+     "role": "related"
+    }
+   ],
+   "cross_market": false
+  },
+  {
+   "id": "kr-bio",
+   "market": "KR",
+   "name": "바이오 · 제약",
+   "sector": "헬스케어",
+   "summary": "기술수출(L/O), 임상 결과, 바이오시밀러·CDMO",
+   "keywords": [
+    {
+     "k": "임상",
+     "w": 3
+    },
+    {
+     "k": "FDA",
+     "w": 3
+    },
+    {
+     "k": "기술수출",
+     "w": 3
+    },
+    {
+     "k": "라이선스아웃",
+     "w": 3
+    },
+    {
+     "k": "바이오시밀러",
+     "w": 3
+    },
+    {
+     "k": "CDMO",
+     "w": 3
+    },
+    {
+     "k": "신약",
+     "w": 2
+    },
+    {
+     "k": "품목허가",
+     "w": 2
+    },
+    {
+     "k": "비만치료제",
+     "w": 3
+    },
+    {
+     "k": "ADC",
+     "w": 3
+    },
+    {
+     "k": "JPM 헬스케어",
+     "w": 2
+    },
+    {
+     "k": "2상",
+     "w": 2
+    },
+    {
+     "k": "3상",
+     "w": 3
+    },
+    {
+     "k": "혁신의료기기",
+     "w": 3
+    },
+    {
+     "k": "유증",
+     "w": 1
+    },
+    {
+     "k": "바이오주",
+     "w": 3
+    },
+    {
+     "k": "제약주",
+     "w": 3
+    },
+    {
+     "k": "통풍",
+     "w": 2
+    },
+    {
+     "k": "진단키트",
+     "w": 2
+    },
+    {
+     "k": "병용",
+     "w": 2
+    }
+   ],
+   "stocks": [
+    {
+     "name": "삼성바이오로직스",
+     "code": "207940",
+     "role": "leader"
+    },
+    {
+     "name": "셀트리온",
+     "code": "068270",
+     "role": "leader"
+    },
+    {
+     "name": "유한양행",
+     "code": "000100",
+     "role": "core"
+    },
+    {
+     "name": "알테오젠",
+     "code": "196170",
+     "role": "core"
+    },
+    {
+     "name": "리가켐바이오",
+     "code": "141080",
+     "role": "related"
+    },
+    {
+     "name": "한미약품",
+     "code": "128940",
+     "role": "related"
+    },
+    {
+     "name": "엘앤씨바이오",
+     "code": "290650",
+     "role": "related"
+    }
+   ],
+   "cross_market": false
+  },
+  {
+   "id": "kr-ai-sw",
+   "market": "KR",
+   "name": "AI 소프트웨어 · 데이터센터",
+   "sector": "IT",
+   "summary": "국산 LLM, AI 인프라 구축, IDC·클라우드 투자",
+   "keywords": [
+    {
+     "k": "인공지능",
+     "w": 2
+    },
+    {
+     "k": "AI",
+     "w": 1
+    },
+    {
+     "k": "LLM",
+     "w": 3
+    },
+    {
+     "k": "생성형",
+     "w": 3
+    },
+    {
+     "k": "소버린 AI",
+     "w": 3
+    },
+    {
+     "k": "데이터센터",
+     "w": 3
+    },
+    {
+     "k": "GPU",
+     "w": 2
+    },
+    {
+     "k": "클라우드",
+     "w": 2
+    },
+    {
+     "k": "온디바이스",
+     "w": 3
+    },
+    {
+     "k": "AI 기본법",
+     "w": 3
+    },
+    {
+     "k": "AI 인프라",
+     "w": 3
+    },
+    {
+     "k": "코어위브",
+     "w": 3
+    },
+    {
+     "k": "GPU 임대",
+     "w": 3
+    },
+    {
+     "k": "IDC",
+     "w": 3
+    },
+    {
+     "k": "전력 계약",
+     "w": 2
+    }
+   ],
+   "stocks": [
+    {
+     "name": "네이버",
+     "code": "035420",
+     "role": "leader"
+    },
+    {
+     "name": "카카오",
+     "code": "035720",
+     "role": "core"
+    },
+    {
+     "name": "더존비즈온",
+     "code": "012510",
+     "role": "related"
+    },
+    {
+     "name": "루닛",
+     "code": "328130",
+     "role": "related"
+    },
+    {
+     "name": "폴라리스오피스",
+     "code": "041020",
+     "role": "related"
+    },
+    {
+     "name": "케이아이엔엑스",
+     "code": "093320",
+     "role": "related"
+    }
+   ],
+   "cross_market": false
+  },
+  {
+   "id": "kr-robot",
+   "market": "KR",
+   "name": "로봇 · 휴머노이드",
+   "sector": "산업재",
+   "summary": "협동로봇, 물류로봇, 휴머노이드 부품 밸류체인",
+   "keywords": [
+    {
+     "k": "로봇",
+     "w": 3
+    },
+    {
+     "k": "휴머노이드",
+     "w": 3
+    },
+    {
+     "k": "협동로봇",
+     "w": 3
+    },
+    {
+     "k": "감속기",
+     "w": 3
+    },
+    {
+     "k": "액추에이터",
+     "w": 3
+    },
+    {
+     "k": "옵티머스",
+     "w": 3
+    },
+    {
+     "k": "피지컬 AI",
+     "w": 3
+    },
+    {
+     "k": "물류자동화",
+     "w": 2
+    }
+   ],
+   "stocks": [
+    {
+     "name": "두산로보틱스",
+     "code": "454910",
+     "role": "leader"
+    },
+    {
+     "name": "레인보우로보틱스",
+     "code": "277810",
+     "role": "leader"
+    },
+    {
+     "name": "에스비비테크",
+     "code": "389500",
+     "role": "core"
+    },
+    {
+     "name": "로보티즈",
+     "code": "108490",
+     "role": "related"
+    },
+    {
+     "name": "하이젠알앤엠",
+     "code": "160190",
+     "role": "related"
+    },
+    {
+     "name": "삼익THK",
+     "code": "004380",
+     "role": "related"
+    }
+   ],
+   "cross_market": false
+  },
+  {
+   "id": "kr-space",
+   "market": "KR",
+   "name": "우주항공 · 위성",
+   "sector": "산업재",
+   "summary": "누리호·발사체, 저궤도 위성통신, UAM",
+   "keywords": [
+    {
+     "k": "우주",
+     "w": 3
+    },
+    {
+     "k": "누리호",
+     "w": 3
+    },
+    {
+     "k": "발사체",
+     "w": 3
+    },
+    {
+     "k": "위성",
+     "w": 3
+    },
+    {
+     "k": "저궤도",
+     "w": 3
+    },
+    {
+     "k": "우주항공청",
+     "w": 3
+    },
+    {
+     "k": "UAM",
+     "w": 3
+    },
+    {
+     "k": "스타링크",
+     "w": 2
+    },
+    {
+     "k": "스페이스X",
+     "w": 3
+    },
+    {
+     "k": "우주주",
+     "w": 3
+    }
+   ],
+   "stocks": [
+    {
+     "name": "한국항공우주",
+     "code": "047810",
+     "role": "leader"
+    },
+    {
+     "name": "한화시스템",
+     "code": "272210",
+     "role": "core"
+    },
+    {
+     "name": "쎄트렉아이",
+     "code": "099320",
+     "role": "core"
+    },
+    {
+     "name": "AP위성",
+     "code": "211270",
+     "role": "related"
+    },
+    {
+     "name": "인텔리안테크",
+     "code": "189300",
+     "role": "related"
+    },
+    {
+     "name": "켄코아에어로스페이스",
+     "code": "274090",
+     "role": "related"
+    }
+   ],
+   "cross_market": false
+  },
+  {
+   "id": "kr-ent",
+   "market": "KR",
+   "name": "엔터 · K-콘텐츠",
+   "sector": "커뮤니케이션",
+   "summary": "아이돌 컴백/월드투어, 드라마·영화 흥행, 팬덤 플랫폼",
+   "keywords": [
+    {
+     "k": "엔터",
+     "w": 2
+    },
+    {
+     "k": "아이돌",
+     "w": 3
+    },
+    {
+     "k": "컴백",
+     "w": 2
+    },
+    {
+     "k": "월드투어",
+     "w": 3
+    },
+    {
+     "k": "K팝",
+     "w": 3
+    },
+    {
+     "k": "넷플릭스",
+     "w": 2
+    },
+    {
+     "k": "드라마",
+     "w": 2
+    },
+    {
+     "k": "빌보드",
+     "w": 3
+    },
+    {
+     "k": "팬덤",
+     "w": 2
+    },
+    {
+     "k": "콘서트",
+     "w": 2
+    }
+   ],
+   "stocks": [
+    {
+     "name": "하이브",
+     "code": "352820",
+     "role": "leader"
+    },
+    {
+     "name": "JYP Ent.",
+     "code": "035900",
+     "role": "core"
+    },
+    {
+     "name": "에스엠",
+     "code": "041510",
+     "role": "core"
+    },
+    {
+     "name": "와이지엔터테인먼트",
+     "code": "122870",
+     "role": "related"
+    },
+    {
+     "name": "CJ ENM",
+     "code": "035760",
+     "role": "related"
+    },
+    {
+     "name": "스튜디오드래곤",
+     "code": "253450",
+     "role": "related"
+    }
+   ],
+   "cross_market": false
+  },
+  {
+   "id": "kr-beauty",
+   "market": "KR",
+   "name": "화장품 · K-뷰티",
+   "sector": "소비재",
+   "summary": "인디 브랜드 수출, ODM 가동률, 미국·일본 수출 데이터",
+   "keywords": [
+    {
+     "k": "화장품",
+     "w": 3
+    },
+    {
+     "k": "K뷰티",
+     "w": 3
+    },
+    {
+     "k": "ODM",
+     "w": 2
+    },
+    {
+     "k": "인디 브랜드",
+     "w": 3
+    },
+    {
+     "k": "올리브영",
+     "w": 2
+    },
+    {
+     "k": "수출 호조",
+     "w": 2
+    },
+    {
+     "k": "아마존 뷰티",
+     "w": 3
+    },
+    {
+     "k": "선크림",
+     "w": 2
+    },
+    {
+     "k": "코스맥스",
+     "w": 3
+    },
+    {
+     "k": "뷰티주",
+     "w": 3
+    }
+   ],
+   "stocks": [
+    {
+     "name": "아모레퍼시픽",
+     "code": "090430",
+     "role": "leader"
+    },
+    {
+     "name": "코스맥스",
+     "code": "192820",
+     "role": "core"
+    },
+    {
+     "name": "한국콜마",
+     "code": "161890",
+     "role": "core"
+    },
+    {
+     "name": "실리콘투",
+     "code": "257720",
+     "role": "core"
+    },
+    {
+     "name": "LG생활건강",
+     "code": "051900",
+     "role": "related"
+    },
+    {
+     "name": "코스메카코리아",
+     "code": "241710",
+     "role": "related"
+    }
+   ],
+   "cross_market": false
+  },
+  {
+   "id": "kr-crypto",
+   "market": "KR",
+   "name": "가상자산 · 스테이블코인",
+   "sector": "금융",
+   "summary": "원화 스테이블코인 법제화, 거래소 실적, 비트코인 가격 연동",
+   "keywords": [
+    {
+     "k": "스테이블코인",
+     "w": 3
+    },
+    {
+     "k": "가상자산",
+     "w": 3
+    },
+    {
+     "k": "비트코인",
+     "w": 3
+    },
+    {
+     "k": "디지털자산",
+     "w": 3
+    },
+    {
+     "k": "업비트",
+     "w": 3
+    },
+    {
+     "k": "빗썸",
+     "w": 3
+    },
+    {
+     "k": "원화 코인",
+     "w": 3
+    },
+    {
+     "k": "블록체인",
+     "w": 2
+    },
+    {
+     "k": "토큰증권",
+     "w": 3
+    },
+    {
+     "k": "STO",
+     "w": 3
+    }
+   ],
+   "stocks": [
+    {
+     "name": "두나무(비상장)",
+     "code": "-",
+     "role": "leader"
+    },
+    {
+     "name": "카카오페이",
+     "code": "377300",
+     "role": "core"
+    },
+    {
+     "name": "다날",
+     "code": "064260",
+     "role": "core"
+    },
+    {
+     "name": "한국정보통신",
+     "code": "025770",
+     "role": "related"
+    },
+    {
+     "name": "갤럭시아머니트리",
+     "code": "094480",
+     "role": "related"
+    },
+    {
+     "name": "케이지이니시스",
+     "code": "035600",
+     "role": "related"
+    }
+   ],
+   "cross_market": false
+  },
+  {
+   "id": "kr-value",
+   "market": "KR",
+   "name": "저PBR · 밸류업/지배구조",
+   "sector": "금융",
+   "summary": "주주환원 확대, 자사주 소각, 상법 개정 이슈",
+   "keywords": [
+    {
+     "k": "밸류업",
+     "w": 3
+    },
+    {
+     "k": "저PBR",
+     "w": 3
+    },
+    {
+     "k": "자사주 소각",
+     "w": 3
+    },
+    {
+     "k": "주주환원",
+     "w": 3
+    },
+    {
+     "k": "배당 확대",
+     "w": 3
+    },
+    {
+     "k": "지배구조",
+     "w": 2
+    },
+    {
+     "k": "상법 개정",
+     "w": 3
+    },
+    {
+     "k": "지주사",
+     "w": 2
+    },
+    {
+     "k": "자사주 매입",
+     "w": 3
+    },
+    {
+     "k": "자사주 전량 소각",
+     "w": 3
+    },
+    {
+     "k": "주주가치",
+     "w": 2
+    },
+    {
+     "k": "소각",
+     "w": 2
+    },
+    {
+     "k": "지주회사",
+     "w": 3
+    },
+    {
+     "k": "만년 저평가",
+     "w": 3
+    },
+    {
+     "k": "할인율",
+     "w": 2
+    },
+    {
+     "k": "자회사 가치",
+     "w": 3
+    }
+   ],
+   "stocks": [
+    {
+     "name": "KB금융",
+     "code": "105560",
+     "role": "leader"
+    },
+    {
+     "name": "신한지주",
+     "code": "055550",
+     "role": "core"
+    },
+    {
+     "name": "하나금융지주",
+     "code": "086790",
+     "role": "core"
+    },
+    {
+     "name": "메리츠금융지주",
+     "code": "138040",
+     "role": "related"
+    },
+    {
+     "name": "삼성물산",
+     "code": "028260",
+     "role": "related"
+    },
+    {
+     "name": "현대차",
+     "code": "005380",
+     "role": "related"
+    },
+    {
+     "name": "GS",
+     "code": "078930",
+     "role": "core",
+     "alias": [
+      "GS그룹"
+     ]
+    },
+    {
+     "name": "LG",
+     "code": "003550",
+     "role": "related"
+    },
+    {
+     "name": "SK",
+     "code": "034730",
+     "role": "related"
+    },
+    {
+     "name": "한화",
+     "code": "000880",
+     "role": "related"
+    }
+   ],
+   "cross_market": false
+  },
+  {
+   "id": "kr-hydrogen",
+   "market": "KR",
+   "name": "수소 · 신재생에너지",
+   "sector": "유틸리티",
+   "summary": "청정수소 입찰, 연료전지, 태양광·풍력 정책",
+   "keywords": [
+    {
+     "k": "수소",
+     "w": 3
+    },
+    {
+     "k": "연료전지",
+     "w": 3
+    },
+    {
+     "k": "청정수소",
+     "w": 3
+    },
+    {
+     "k": "암모니아",
+     "w": 2
+    },
+    {
+     "k": "태양광",
+     "w": 3
+    },
+    {
+     "k": "풍력",
+     "w": 3
+    },
+    {
+     "k": "해상풍력",
+     "w": 3
+    },
+    {
+     "k": "재생에너지",
+     "w": 2
+    },
+    {
+     "k": "RE100",
+     "w": 2
+    }
+   ],
+   "stocks": [
+    {
+     "name": "두산퓨얼셀",
+     "code": "336260",
+     "role": "leader"
+    },
+    {
+     "name": "한화솔루션",
+     "code": "009830",
+     "role": "core"
+    },
+    {
+     "name": "씨에스윈드",
+     "code": "112610",
+     "role": "core"
+    },
+    {
+     "name": "효성첨단소재",
+     "code": "298050",
+     "role": "related"
+    },
+    {
+     "name": "SK이터닉스",
+     "code": "475150",
+     "role": "related"
+    },
+    {
+     "name": "OCI홀딩스",
+     "code": "010060",
+     "role": "related"
+    }
+   ],
+   "cross_market": false
+  },
+  {
+   "id": "kr-auto",
+   "market": "KR",
+   "name": "자동차 · 자율주행",
+   "sector": "경기소비재",
+   "summary": "완성차 판매·관세, 자율주행 부품, 전장 밸류체인",
+   "keywords": [
+    {
+     "k": "완성차",
+     "w": 3
+    },
+    {
+     "k": "자동차 관세",
+     "w": 3
+    },
+    {
+     "k": "자율주행",
+     "w": 3
+    },
+    {
+     "k": "전장",
+     "w": 3
+    },
+    {
+     "k": "라이다",
+     "w": 3
+    },
+    {
+     "k": "로보택시",
+     "w": 3
+    },
+    {
+     "k": "하이브리드 판매",
+     "w": 2
+    },
+    {
+     "k": "현대차",
+     "w": 2
+    },
+    {
+     "k": "기아",
+     "w": 2
+    }
+   ],
+   "stocks": [
+    {
+     "name": "현대차",
+     "code": "005380",
+     "role": "leader"
+    },
+    {
+     "name": "기아",
+     "code": "000270",
+     "role": "leader"
+    },
+    {
+     "name": "현대모비스",
+     "code": "012330",
+     "role": "core"
+    },
+    {
+     "name": "HL만도",
+     "code": "204320",
+     "role": "related"
+    },
+    {
+     "name": "에스엘",
+     "code": "005850",
+     "role": "related"
+    },
+    {
+     "name": "현대오토에버",
+     "code": "307950",
+     "role": "related"
+    }
+   ],
+   "cross_market": false
+  },
+  {
+   "id": "kr-game",
+   "market": "KR",
+   "name": "게임 · 메타버스",
+   "sector": "커뮤니케이션",
+   "summary": "신작 출시, 중국 판호, 글로벌 흥행 지표",
+   "keywords": [
+    {
+     "k": "게임",
+     "w": 3
+    },
+    {
+     "k": "신작",
+     "w": 2
+    },
+    {
+     "k": "판호",
+     "w": 3
+    },
+    {
+     "k": "스팀",
+     "w": 2
+    },
+    {
+     "k": "출시",
+     "w": 1
+    },
+    {
+     "k": "MMORPG",
+     "w": 3
+    },
+    {
+     "k": "메타버스",
+     "w": 3
+    },
+    {
+     "k": "게임스컴",
+     "w": 3
+    },
+    {
+     "k": "어닝 쇼크",
+     "w": 1
+    },
+    {
+     "k": "펄어비스",
+     "w": 3
+    },
+    {
+     "k": "게임주",
+     "w": 3
+    }
+   ],
+   "stocks": [
+    {
+     "name": "크래프톤",
+     "code": "259960",
+     "role": "leader"
+    },
+    {
+     "name": "넷마블",
+     "code": "251270",
+     "role": "core"
+    },
+    {
+     "name": "엔씨소프트",
+     "code": "036570",
+     "role": "core"
+    },
+    {
+     "name": "펄어비스",
+     "code": "263750",
+     "role": "related"
+    },
+    {
+     "name": "시프트업",
+     "code": "462870",
+     "role": "related"
+    },
+    {
+     "name": "위메이드",
+     "code": "112040",
+     "role": "related"
+    }
+   ],
+   "cross_market": false
+  },
+  {
+   "id": "us-ai-infra",
+   "market": "US",
+   "name": "AI Infrastructure · GPU",
+   "sector": "Technology",
+   "summary": "AI accelerators, networking, and hyperscaler capex cycle",
+   "keywords": [
+    {
+     "k": "Nvidia",
+     "w": 3
+    },
+    {
+     "k": "GPU",
+     "w": 3
+    },
+    {
+     "k": "AI chip",
+     "w": 3
+    },
+    {
+     "k": "accelerator",
+     "w": 2
+    },
+    {
+     "k": "capex",
+     "w": 2
+    },
+    {
+     "k": "hyperscaler",
+     "w": 3
+    },
+    {
+     "k": "Blackwell",
+     "w": 3
+    },
+    {
+     "k": "inference",
+     "w": 2
+    },
+    {
+     "k": "AI 반도체",
+     "w": 3
+    },
+    {
+     "k": "엔비디아",
+     "w": 3
+    },
+    {
+     "k": "코어위브",
+     "w": 3
+    },
+    {
+     "k": "슈퍼마이크로",
+     "w": 3
+    },
+    {
+     "k": "AI 인프라",
+     "w": 3
+    },
+    {
+     "k": "수주잔고",
+     "w": 2
+    },
+    {
+     "k": "가이던스 상향",
+     "w": 2
+    },
+    {
+     "k": "광트랜시버",
+     "w": 3
+    },
+    {
+     "k": "개장전",
+     "w": 0
+    }
+   ],
+   "stocks": [
+    {
+     "name": "NVIDIA",
+     "code": "NVDA",
+     "role": "leader",
+     "alias": [
+      "엔비디아",
+      "NVDA"
+     ]
+    },
+    {
+     "name": "Broadcom",
+     "code": "AVGO",
+     "role": "leader",
+     "alias": [
+      "브로드컴",
+      "AVGO"
+     ]
+    },
+    {
+     "name": "AMD",
+     "code": "AMD",
+     "role": "core",
+     "alias": [
+      "에이엠디"
+     ]
+    },
+    {
+     "name": "Marvell",
+     "code": "MRVL",
+     "role": "core",
+     "alias": [
+      "마벨"
+     ]
+    },
+    {
+     "name": "Arista Networks",
+     "code": "ANET",
+     "role": "related",
+     "alias": [
+      "아리스타"
+     ]
+    },
+    {
+     "name": "Vertiv",
+     "code": "VRT",
+     "role": "related",
+     "alias": [
+      "버티브"
+     ]
+    },
+    {
+     "name": "CoreWeave",
+     "code": "CRWV",
+     "role": "core",
+     "alias": [
+      "코어위브"
+     ]
+    },
+    {
+     "name": "Super Micro",
+     "code": "SMCI",
+     "role": "related",
+     "alias": [
+      "슈퍼마이크로"
+     ]
+    },
+    {
+     "name": "Intel",
+     "code": "INTC",
+     "role": "related",
+     "alias": [
+      "인텔"
+     ]
+    },
+    {
+     "name": "Nebius",
+     "code": "NBIS",
+     "role": "related",
+     "alias": [
+      "네비우스"
+     ]
+    },
+    {
+     "name": "Lumentum",
+     "code": "LITE",
+     "role": "related",
+     "alias": [
+      "루멘텀"
+     ]
+    },
+    {
+     "name": "Coherent",
+     "code": "COHR",
+     "role": "related",
+     "alias": [
+      "코히어런트"
+     ]
+    }
+   ],
+   "cross_market": false
+  },
+  {
+   "id": "us-semicap",
+   "market": "US",
+   "name": "Semiconductor Equipment",
+   "sector": "Technology",
+   "summary": "WFE spending, export controls, advanced packaging tools",
+   "keywords": [
+    {
+     "k": "ASML",
+     "w": 3
+    },
+    {
+     "k": "lithography",
+     "w": 3
+    },
+    {
+     "k": "wafer fab equipment",
+     "w": 3
+    },
+    {
+     "k": "WFE",
+     "w": 3
+    },
+    {
+     "k": "export control",
+     "w": 3
+    },
+    {
+     "k": "CHIPS Act",
+     "w": 3
+    },
+    {
+     "k": "foundry capex",
+     "w": 3
+    },
+    {
+     "k": "수출통제",
+     "w": 2
+    }
+   ],
+   "stocks": [
+    {
+     "name": "ASML",
+     "code": "ASML",
+     "role": "leader",
+     "alias": [
+      "에이에스엠엘"
+     ]
+    },
+    {
+     "name": "Applied Materials",
+     "code": "AMAT",
+     "role": "core",
+     "alias": [
+      "어플라이드머티어리얼즈",
+      "AMAT"
+     ]
+    },
+    {
+     "name": "Lam Research",
+     "code": "LRCX",
+     "role": "core",
+     "alias": [
+      "램리서치"
+     ]
+    },
+    {
+     "name": "KLA",
+     "code": "KLAC",
+     "role": "core"
+    },
+    {
+     "name": "TSMC",
+     "code": "TSM",
+     "role": "related",
+     "alias": [
+      "티에스엠씨",
+      "대만 TSMC"
+     ]
+    }
+   ],
+   "cross_market": false
+  },
+  {
+   "id": "us-power",
+   "market": "US",
+   "name": "Datacenter Power · Grid",
+   "sector": "Industrials",
+   "summary": "Electricity demand from AI datacenters, turbines, grid equipment",
+   "keywords": [
+    {
+     "k": "power demand",
+     "w": 3
+    },
+    {
+     "k": "grid",
+     "w": 3
+    },
+    {
+     "k": "transformer",
+     "w": 3
+    },
+    {
+     "k": "turbine",
+     "w": 3
+    },
+    {
+     "k": "PPA",
+     "w": 3
+    },
+    {
+     "k": "datacenter power",
+     "w": 3
+    },
+    {
+     "k": "electricity",
+     "w": 2
+    },
+    {
+     "k": "utility",
+     "w": 2
+    }
+   ],
+   "stocks": [
+    {
+     "name": "GE Vernova",
+     "code": "GEV",
+     "role": "leader",
+     "alias": [
+      "지이버노바",
+      "GE 버노바"
+     ]
+    },
+    {
+     "name": "Constellation Energy",
+     "code": "CEG",
+     "role": "core",
+     "alias": [
+      "콘스텔레이션"
+     ]
+    },
+    {
+     "name": "Vistra",
+     "code": "VST",
+     "role": "core",
+     "alias": [
+      "비스트라"
+     ]
+    },
+    {
+     "name": "Eaton",
+     "code": "ETN",
+     "role": "related"
+    },
+    {
+     "name": "Quanta Services",
+     "code": "PWR",
+     "role": "related"
+    }
+   ],
+   "cross_market": false
+  },
+  {
+   "id": "us-nuclear",
+   "market": "US",
+   "name": "Nuclear · SMR",
+   "sector": "Utilities",
+   "summary": "SMR licensing, uranium supply, restart of retired plants",
+   "keywords": [
+    {
+     "k": "SMR",
+     "w": 3
+    },
+    {
+     "k": "nuclear",
+     "w": 3
+    },
+    {
+     "k": "uranium",
+     "w": 3
+    },
+    {
+     "k": "NRC",
+     "w": 3
+    },
+    {
+     "k": "reactor",
+     "w": 3
+    },
+    {
+     "k": "enrichment",
+     "w": 3
+    },
+    {
+     "k": "원전",
+     "w": 2
+    }
+   ],
+   "stocks": [
+    {
+     "name": "Oklo",
+     "code": "OKLO",
+     "role": "leader",
+     "alias": [
+      "오클로"
+     ]
+    },
+    {
+     "name": "NuScale Power",
+     "code": "SMR",
+     "role": "core"
+    },
+    {
+     "name": "Cameco",
+     "code": "CCJ",
+     "role": "core",
+     "alias": [
+      "카메코"
+     ]
+    },
+    {
+     "name": "Centrus Energy",
+     "code": "LEU",
+     "role": "related"
+    },
+    {
+     "name": "BWX Technologies",
+     "code": "BWXT",
+     "role": "related"
+    }
+   ],
+   "cross_market": false
+  },
+  {
+   "id": "us-quantum",
+   "market": "US",
+   "name": "Quantum Computing",
+   "sector": "Technology",
+   "summary": "Qubit milestones, error correction, government contracts",
+   "keywords": [
+    {
+     "k": "quantum",
+     "w": 3
+    },
+    {
+     "k": "qubit",
+     "w": 3
+    },
+    {
+     "k": "error correction",
+     "w": 3
+    },
+    {
+     "k": "양자",
+     "w": 3
+    },
+    {
+     "k": "quantum advantage",
+     "w": 3
+    },
+    {
+     "k": "Willow",
+     "w": 2
+    },
+    {
+     "k": "퀀티넘",
+     "w": 3
+    },
+    {
+     "k": "아이온큐",
+     "w": 3
+    }
+   ],
+   "stocks": [
+    {
+     "name": "IonQ",
+     "code": "IONQ",
+     "role": "leader",
+     "alias": [
+      "아이온큐"
+     ]
+    },
+    {
+     "name": "Rigetti",
+     "code": "RGTI",
+     "role": "core"
+    },
+    {
+     "name": "D-Wave Quantum",
+     "code": "QBTS",
+     "role": "core"
+    },
+    {
+     "name": "Alphabet",
+     "code": "GOOGL",
+     "role": "related"
+    },
+    {
+     "name": "IBM",
+     "code": "IBM",
+     "role": "related",
+     "alias": [
+      "아이비엠"
+     ]
+    },
+    {
+     "name": "Quantinuum",
+     "code": "QTUM",
+     "role": "core",
+     "alias": [
+      "퀀티넘"
+     ]
+    }
+   ],
+   "cross_market": false
+  },
+  {
+   "id": "us-obesity",
+   "market": "US",
+   "name": "Obesity / GLP-1",
+   "sector": "Healthcare",
+   "summary": "GLP-1 trial data, oral formulations, supply and pricing",
+   "keywords": [
+    {
+     "k": "GLP-1",
+     "w": 3
+    },
+    {
+     "k": "obesity",
+     "w": 3
+    },
+    {
+     "k": "semaglutide",
+     "w": 3
+    },
+    {
+     "k": "tirzepatide",
+     "w": 3
+    },
+    {
+     "k": "Wegovy",
+     "w": 3
+    },
+    {
+     "k": "Zepbound",
+     "w": 3
+    },
+    {
+     "k": "비만치료제",
+     "w": 3
+    },
+    {
+     "k": "phase 3",
+     "w": 2
+    }
+   ],
+   "stocks": [
+    {
+     "name": "Eli Lilly",
+     "code": "LLY",
+     "role": "leader",
+     "alias": [
+      "일라이릴리",
+      "릴리"
+     ]
+    },
+    {
+     "name": "Novo Nordisk",
+     "code": "NVO",
+     "role": "leader",
+     "alias": [
+      "노보노디스크"
+     ]
+    },
+    {
+     "name": "Viking Therapeutics",
+     "code": "VKTX",
+     "role": "core"
+    },
+    {
+     "name": "Amgen",
+     "code": "AMGN",
+     "role": "related"
+    },
+    {
+     "name": "Hims & Hers",
+     "code": "HIMS",
+     "role": "related"
+    }
+   ],
+   "cross_market": false
+  },
+  {
+   "id": "us-crypto",
+   "market": "US",
+   "name": "Crypto · Stablecoin",
+   "sector": "Financials",
+   "summary": "Bitcoin price, ETF flows, stablecoin regulation",
+   "keywords": [
+    {
+     "k": "bitcoin",
+     "w": 3
+    },
+    {
+     "k": "crypto",
+     "w": 3
+    },
+    {
+     "k": "stablecoin",
+     "w": 3
+    },
+    {
+     "k": "ETF flow",
+     "w": 3
+    },
+    {
+     "k": "ethereum",
+     "w": 3
+    },
+    {
+     "k": "GENIUS Act",
+     "w": 3
+    },
+    {
+     "k": "비트코인",
+     "w": 3
+    },
+    {
+     "k": "SEC",
+     "w": 1
+    }
+   ],
+   "stocks": [
+    {
+     "name": "Coinbase",
+     "code": "COIN",
+     "role": "leader",
+     "alias": [
+      "코인베이스"
+     ]
+    },
+    {
+     "name": "Circle Internet",
+     "code": "CRCL",
+     "role": "leader",
+     "alias": [
+      "서클"
+     ]
+    },
+    {
+     "name": "Strategy",
+     "code": "MSTR",
+     "role": "core",
+     "alias": [
+      "스트래티지",
+      "마이크로스트래티지"
+     ]
+    },
+    {
+     "name": "Robinhood",
+     "code": "HOOD",
+     "role": "related"
+    },
+    {
+     "name": "Galaxy Digital",
+     "code": "GLXY",
+     "role": "related"
+    }
+   ],
+   "cross_market": false
+  },
+  {
+   "id": "us-space",
+   "market": "US",
+   "name": "Space · Defense Tech",
+   "sector": "Industrials",
+   "summary": "Launch cadence, satellite constellations, defense software",
+   "keywords": [
+    {
+     "k": "space",
+     "w": 2
+    },
+    {
+     "k": "satellite",
+     "w": 3
+    },
+    {
+     "k": "launch",
+     "w": 2
+    },
+    {
+     "k": "defense contract",
+     "w": 3
+    },
+    {
+     "k": "Golden Dome",
+     "w": 3
+    },
+    {
+     "k": "drone",
+     "w": 3
+    },
+    {
+     "k": "Pentagon",
+     "w": 3
+    },
+    {
+     "k": "hypersonic",
+     "w": 3
+    },
+    {
+     "k": "드론",
+     "w": 3
+    },
+    {
+     "k": "UAV",
+     "w": 3
+    },
+    {
+     "k": "무인기",
+     "w": 3
+    },
+    {
+     "k": "counter-drone",
+     "w": 3
+    },
+    {
+     "k": "스페이스X",
+     "w": 3
+    },
+    {
+     "k": "SpaceX",
+     "w": 3
+    }
+   ],
+   "stocks": [
+    {
+     "name": "Rocket Lab",
+     "code": "RKLB",
+     "role": "leader",
+     "alias": [
+      "로켓랩"
+     ]
+    },
+    {
+     "name": "Palantir",
+     "code": "PLTR",
+     "role": "leader",
+     "alias": [
+      "팔란티어"
+     ]
+    },
+    {
+     "name": "AeroVironment",
+     "code": "AVAV",
+     "role": "core"
+    },
+    {
+     "name": "Kratos Defense",
+     "code": "KTOS",
+     "role": "related"
+    },
+    {
+     "name": "L3Harris",
+     "code": "LHX",
+     "role": "related",
+     "alias": [
+      "L3해리스"
+     ]
+    },
+    {
+     "name": "Lockheed Martin",
+     "code": "LMT",
+     "role": "core",
+     "alias": [
+      "록히드 마틴",
+      "록히드마틴"
+     ]
+    },
+    {
+     "name": "Unusual Machines",
+     "code": "UMAC",
+     "role": "related",
+     "alias": [
+      "언유주얼머신스"
+     ]
+    }
+   ],
+   "cross_market": false
+  },
+  {
+   "id": "us-robotics",
+   "market": "US",
+   "name": "Robotics · Physical AI",
+   "sector": "Industrials",
+   "summary": "Humanoid robots, autonomous vehicles, warehouse automation",
+   "keywords": [
+    {
+     "k": "humanoid",
+     "w": 3
+    },
+    {
+     "k": "robotaxi",
+     "w": 3
+    },
+    {
+     "k": "autonomous",
+     "w": 3
+    },
+    {
+     "k": "physical AI",
+     "w": 3
+    },
+    {
+     "k": "Optimus",
+     "w": 3
+    },
+    {
+     "k": "Waymo",
+     "w": 3
+    },
+    {
+     "k": "automation",
+     "w": 2
+    },
+    {
+     "k": "휴머노이드",
+     "w": 3
+    }
+   ],
+   "stocks": [
+    {
+     "name": "Tesla",
+     "code": "TSLA",
+     "role": "leader",
+     "alias": [
+      "테슬라",
+      "TSLA"
+     ]
+    },
+    {
+     "name": "Symbotic",
+     "code": "SYM",
+     "role": "core"
+    },
+    {
+     "name": "Rockwell Automation",
+     "code": "ROK",
+     "role": "related"
+    },
+    {
+     "name": "Teradyne",
+     "code": "TER",
+     "role": "related"
+    },
+    {
+     "name": "Aurora Innovation",
+     "code": "AUR",
+     "role": "related"
+    },
+    {
+     "name": "SpaceX (비상장)",
+     "code": "-",
+     "role": "related",
+     "alias": [
+      "스페이스X"
+     ]
+    }
+   ],
+   "cross_market": false
+  },
+  {
+   "id": "us-cyber",
+   "market": "US",
+   "name": "Cybersecurity",
+   "sector": "Technology",
+   "summary": "Breach events, platform consolidation, AI-driven security",
+   "keywords": [
+    {
+     "k": "cybersecurity",
+     "w": 3
+    },
+    {
+     "k": "ransomware",
+     "w": 3
+    },
+    {
+     "k": "breach",
+     "w": 3
+    },
+    {
+     "k": "zero trust",
+     "w": 3
+    },
+    {
+     "k": "해킹",
+     "w": 2
+    },
+    {
+     "k": "보안",
+     "w": 2
+    },
+    {
+     "k": "vulnerability",
+     "w": 2
+    }
+   ],
+   "stocks": [
+    {
+     "name": "Palo Alto Networks",
+     "code": "PANW",
+     "role": "leader"
+    },
+    {
+     "name": "CrowdStrike",
+     "code": "CRWD",
+     "role": "leader",
+     "alias": [
+      "크라우드스트라이크"
+     ]
+    },
+    {
+     "name": "Zscaler",
+     "code": "ZS",
+     "role": "core"
+    },
+    {
+     "name": "Fortinet",
+     "code": "FTNT",
+     "role": "related"
+    },
+    {
+     "name": "Cloudflare",
+     "code": "NET",
+     "role": "related"
+    }
+   ],
+   "cross_market": false
+  },
+  {
+   "id": "us-cloud",
+   "market": "US",
+   "name": "Cloud · Enterprise Software",
+   "sector": "Technology",
+   "summary": "Cloud revenue growth, AI monetization in SaaS, seat pricing",
+   "keywords": [
+    {
+     "k": "cloud revenue",
+     "w": 3
+    },
+    {
+     "k": "SaaS",
+     "w": 3
+    },
+    {
+     "k": "Azure",
+     "w": 3
+    },
+    {
+     "k": "AWS",
+     "w": 3
+    },
+    {
+     "k": "Copilot",
+     "w": 3
+    },
+    {
+     "k": "enterprise software",
+     "w": 3
+    },
+    {
+     "k": "subscription",
+     "w": 2
+    }
+   ],
+   "stocks": [
+    {
+     "name": "Microsoft",
+     "code": "MSFT",
+     "role": "leader",
+     "alias": [
+      "마이크로소프트",
+      "MSFT"
+     ]
+    },
+    {
+     "name": "Amazon",
+     "code": "AMZN",
+     "role": "leader",
+     "alias": [
+      "아마존",
+      "AMZN"
+     ]
+    },
+    {
+     "name": "Alphabet",
+     "code": "GOOGL",
+     "role": "core",
+     "alias": [
+      "알파벳",
+      "구글"
+     ]
+    },
+    {
+     "name": "Salesforce",
+     "code": "CRM",
+     "role": "related"
+    },
+    {
+     "name": "Snowflake",
+     "code": "SNOW",
+     "role": "related"
+    }
+   ],
+   "cross_market": false
+  },
+  {
+   "id": "us-macro",
+   "market": "US",
+   "name": "Macro · Rates & Tariffs",
+   "sector": "Macro",
+   "summary": "Fed policy, CPI, tariff headlines — market-wide risk driver",
+   "keywords": [
+    {
+     "k": "Fed",
+     "w": 3
+    },
+    {
+     "k": "FOMC",
+     "w": 3
+    },
+    {
+     "k": "rate cut",
+     "w": 3
+    },
+    {
+     "k": "CPI",
+     "w": 3
+    },
+    {
+     "k": "inflation",
+     "w": 2
+    },
+    {
+     "k": "tariff",
+     "w": 3
+    },
+    {
+     "k": "관세",
+     "w": 3
+    },
+    {
+     "k": "금리 인하",
+     "w": 3
+    },
+    {
+     "k": "연준",
+     "w": 3
+    },
+    {
+     "k": "국채 금리",
+     "w": 3
+    },
+    {
+     "k": "회사채",
+     "w": 3
+    },
+    {
+     "k": "크레딧",
+     "w": 3
+    },
+    {
+     "k": "하이일드",
+     "w": 3
+    },
+    {
+     "k": "corporate bond",
+     "w": 3
+    },
+    {
+     "k": "credit spread",
+     "w": 3
+    },
+    {
+     "k": "leveraged ETF",
+     "w": 3
+    },
+    {
+     "k": "3배 레버리지",
+     "w": 3
+    },
+    {
+     "k": "junk bond",
+     "w": 3
+    },
+    {
+     "k": "신용 스프레드",
+     "w": 3
+    }
+   ],
+   "stocks": [
+    {
+     "name": "SPDR S&P 500 ETF",
+     "code": "SPY",
+     "role": "leader"
+    },
+    {
+     "name": "Invesco QQQ",
+     "code": "QQQ",
+     "role": "leader"
+    },
+    {
+     "name": "iShares 20+ Treasury",
+     "code": "TLT",
+     "role": "core"
+    },
+    {
+     "name": "SPDR Gold Shares",
+     "code": "GLD",
+     "role": "related"
+    }
+   ],
+   "cross_market": false
+  },
+  {
+   "id": "kr-broker",
+   "market": "KR",
+   "name": "증권 · 금융투자",
+   "sector": "금융",
+   "summary": "거래대금·예탁금 등 수급 지표와 증권사 실적에 연동되는 브로커리지 테마",
+   "keywords": [
+    {
+     "k": "증권사",
+     "w": 3
+    },
+    {
+     "k": "증권주",
+     "w": 3
+    },
+    {
+     "k": "거래대금",
+     "w": 3
+    },
+    {
+     "k": "예탁금",
+     "w": 3
+    },
+    {
+     "k": "브로커리지",
+     "w": 3
+    },
+    {
+     "k": "WM",
+     "w": 2
+    },
+    {
+     "k": "IB",
+     "w": 2
+    },
+    {
+     "k": "순이익 1조",
+     "w": 2
+    },
+    {
+     "k": "어닝 서프라이즈",
+     "w": 1
+    },
+    {
+     "k": "공모가",
+     "w": 2
+    },
+    {
+     "k": "코스닥 상장",
+     "w": 2
+    },
+    {
+     "k": "IPO",
+     "w": 3
+    },
+    {
+     "k": "공매도",
+     "w": 2
+    },
+    {
+     "k": "ETF",
+     "w": 2
+    },
+    {
+     "k": "레버리지",
+     "w": 2
+    },
+    {
+     "k": "리서치센터",
+     "w": 3
+    }
+   ],
+   "stocks": [
+    {
+     "name": "미래에셋증권",
+     "code": "006800",
+     "role": "leader",
+     "alias": [
+      "미래에셋"
+     ]
+    },
+    {
+     "name": "한국금융지주",
+     "code": "071050",
+     "role": "core"
+    },
+    {
+     "name": "키움증권",
+     "code": "039490",
+     "role": "core",
+     "alias": [
+      "키움"
+     ]
+    },
+    {
+     "name": "삼성증권",
+     "code": "016360",
+     "role": "related"
+    },
+    {
+     "name": "NH투자증권",
+     "code": "005940",
+     "role": "related",
+     "alias": [
+      "NH證",
+      "NH투자"
+     ]
+    },
+    {
+     "name": "대신증권",
+     "code": "003540",
+     "role": "related"
+    },
+    {
+     "name": "메리츠금융지주",
+     "code": "138040",
+     "role": "related",
+     "alias": [
+      "메리츠증권",
+      "메리츠금융"
+     ]
+    }
+   ],
+   "cross_market": false
+  },
+  {
+   "id": "kr-const",
+   "market": "KR",
+   "name": "건설 · 부동산",
+   "sector": "산업재",
+   "summary": "주택 공급대책, 정비사업, 해외 플랜트 수주",
+   "keywords": [
+    {
+     "k": "건설주",
+     "w": 3
+    },
+    {
+     "k": "부동산",
+     "w": 3
+    },
+    {
+     "k": "공급대책",
+     "w": 3
+    },
+    {
+     "k": "분양",
+     "w": 3
+    },
+    {
+     "k": "재건축",
+     "w": 3
+    },
+    {
+     "k": "정비사업",
+     "w": 3
+    },
+    {
+     "k": "플랜트",
+     "w": 3
+    },
+    {
+     "k": "수주 잔고",
+     "w": 2
+    },
+    {
+     "k": "주택",
+     "w": 2
+    },
+    {
+     "k": "미분양",
+     "w": 3
+    },
+    {
+     "k": "PF",
+     "w": 3
+    },
+    {
+     "k": "부동산 공급",
+     "w": 3
+    }
+   ],
+   "stocks": [
+    {
+     "name": "현대건설",
+     "code": "000720",
+     "role": "leader"
+    },
+    {
+     "name": "GS건설",
+     "code": "006360",
+     "role": "core"
+    },
+    {
+     "name": "대우건설",
+     "code": "047040",
+     "role": "core"
+    },
+    {
+     "name": "DL이앤씨",
+     "code": "375500",
+     "role": "related"
+    },
+    {
+     "name": "HDC현대산업개발",
+     "code": "294870",
+     "role": "related"
+    },
+    {
+     "name": "삼성E&A",
+     "code": "028050",
+     "role": "related"
+    }
+   ],
+   "cross_market": false
+  },
+  {
+   "id": "kr-market",
+   "market": "KR",
+   "name": "시장 전반 · 수급/지수",
+   "sector": "매크로",
+   "summary": "지수 등락, 외국인·기관 수급, 사이드카 등 시장 전체를 움직이는 이슈",
+   "keywords": [
+    {
+     "k": "코스피",
+     "w": 3
+    },
+    {
+     "k": "코스닥",
+     "w": 3
+    },
+    {
+     "k": "사이드카",
+     "w": 3
+    },
+    {
+     "k": "서킷브레이커",
+     "w": 3
+    },
+    {
+     "k": "외국인 순매수",
+     "w": 3
+    },
+    {
+     "k": "기관 순매수",
+     "w": 3
+    },
+    {
+     "k": "외인",
+     "w": 2
+    },
+    {
+     "k": "개미",
+     "w": 2
+    },
+    {
+     "k": "지수",
+     "w": 2
+    },
+    {
+     "k": "관리종목",
+     "w": 2
+    },
+    {
+     "k": "거래소",
+     "w": 2
+    },
+    {
+     "k": "환율",
+     "w": 2
+    },
+    {
+     "k": "원달러",
+     "w": 3
+    },
+    {
+     "k": "수급",
+     "w": 2
+    },
+    {
+     "k": "월가",
+     "w": 1
+    },
+    {
+     "k": "상한가",
+     "w": 2
+    },
+    {
+     "k": "초고수",
+     "w": 3
+    },
+    {
+     "k": "풀베팅",
+     "w": 3
+    },
+    {
+     "k": "몰빵",
+     "w": 3
+    },
+    {
+     "k": "순매수",
+     "w": 2
+    },
+    {
+     "k": "순매도",
+     "w": 2
+    },
+    {
+     "k": "외국인 수급",
+     "w": 3
+    },
+    {
+     "k": "기관 수급",
+     "w": 3
+    },
+    {
+     "k": "주도주",
+     "w": 2
+    },
+    {
+     "k": "순환매",
+     "w": 3
+    },
+    {
+     "k": "키 맞추기",
+     "w": 3
+    },
+    {
+     "k": "차익실현",
+     "w": 2
+    },
+    {
+     "k": "저평가",
+     "w": 2
+    },
+    {
+     "k": "밸류 리레이팅",
+     "w": 3
+    },
+    {
+     "k": "리레이팅",
+     "w": 3
+    },
+    {
+     "k": "공매도",
+     "w": 3
+    },
+    {
+     "k": "공매도 잔액",
+     "w": 3
+    },
+    {
+     "k": "대차잔고",
+     "w": 3
+    },
+    {
+     "k": "신용융자",
+     "w": 2
+    },
+    {
+     "k": "반대매매",
+     "w": 2
+    }
+   ],
+   "stocks": [
+    {
+     "name": "KODEX 200",
+     "code": "069500",
+     "role": "leader"
+    },
+    {
+     "name": "TIGER 200",
+     "code": "102110",
+     "role": "core"
+    },
+    {
+     "name": "KODEX 코스닥150",
+     "code": "229200",
+     "role": "related"
+    }
+   ],
+   "cross_market": false
+  },
+  {
+   "id": "kr-earnings",
+   "market": "KR",
+   "name": "실적 시즌 · 어닝",
+   "sector": "매크로",
+   "summary": "분기 실적 발표와 목표주가 조정 — 개별 종목 급등락의 최대 트리거",
+   "keywords": [
+    {
+     "k": "영업이익",
+     "w": 3
+    },
+    {
+     "k": "영업익",
+     "w": 3
+    },
+    {
+     "k": "어닝 서프라이즈",
+     "w": 3
+    },
+    {
+     "k": "어닝 쇼크",
+     "w": 3
+    },
+    {
+     "k": "깜짝 실적",
+     "w": 3
+    },
+    {
+     "k": "흑자전환",
+     "w": 3
+    },
+    {
+     "k": "적자전환",
+     "w": 3
+    },
+    {
+     "k": "목표가",
+     "w": 3
+    },
+    {
+     "k": "목표주가",
+     "w": 3
+    },
+    {
+     "k": "2분기",
+     "w": 2
+    },
+    {
+     "k": "2Q",
+     "w": 2
+    },
+    {
+     "k": "상반기 순익",
+     "w": 3
+    },
+    {
+     "k": "분기 최대",
+     "w": 3
+    },
+    {
+     "k": "사상 최대 실적",
+     "w": 3
+    },
+    {
+     "k": "컨센서스",
+     "w": 3
+    },
+    {
+     "k": "실적 발표",
+     "w": 3
+    },
+    {
+     "k": "전년비",
+     "w": 2
+    },
+    {
+     "k": "전년比",
+     "w": 2
+    },
+    {
+     "k": "역대급 실적",
+     "w": 3
+    },
+    {
+     "k": "실적 서프라이즈",
+     "w": 3
+    },
+    {
+     "k": "어닝쇼크",
+     "w": 3
+    },
+    {
+     "k": "실적 리뷰",
+     "w": 2
+    },
+    {
+     "k": "실적리뷰",
+     "w": 2
+    },
+    {
+     "k": "호실적",
+     "w": 3
+    },
+    {
+     "k": "잠정 실적",
+     "w": 3
+    },
+    {
+     "k": "영업이익 증가",
+     "w": 2
+    },
+    {
+     "k": "컨센 상회",
+     "w": 3
+    },
+    {
+     "k": "컨센 하회",
+     "w": 3
+    },
+    {
+     "k": "가이던스",
+     "w": 2
+    }
+   ],
+   "stocks": [],
+   "cross_market": false
+  },
+  {
+   "id": "kr-etf",
+   "market": "KR",
+   "cross_market": true,
+   "name": "ETF · 패시브/인덱스",
+   "sector": "금융",
+   "summary": "ETF·인덱스펀드·레버리지/인버스 등 패시브 상품과 자금 흐름",
+   "keywords": [
+    {
+     "k": "ETF",
+     "w": 3
+    },
+    {
+     "k": "상장지수펀드",
+     "w": 3
+    },
+    {
+     "k": "인덱스펀드",
+     "w": 3
+    },
+    {
+     "k": "패시브",
+     "w": 3
+    },
+    {
+     "k": "인덱스",
+     "w": 2
+    },
+    {
+     "k": "지수 추종",
+     "w": 3
+    },
+    {
+     "k": "추종",
+     "w": 1
+    },
+    {
+     "k": "레버리지",
+     "w": 3
+    },
+    {
+     "k": "인버스",
+     "w": 3
+    },
+    {
+     "k": "단일레버리지",
+     "w": 3
+    },
+    {
+     "k": "곱버스",
+     "w": 3
+    },
+    {
+     "k": "액티브ETF",
+     "w": 3
+    },
+    {
+     "k": "순자산",
+     "w": 2
+    },
+    {
+     "k": "괴리율",
+     "w": 3
+    },
+    {
+     "k": "추적오차",
+     "w": 3
+    },
+    {
+     "k": "리밸런싱",
+     "w": 2
+    },
+    {
+     "k": "지수 편입",
+     "w": 3
+    },
+    {
+     "k": "편입 종목",
+     "w": 2
+    },
+    {
+     "k": "자금 유입",
+     "w": 2
+    },
+    {
+     "k": "설정액",
+     "w": 2
+    },
+    {
+     "k": "뱅가드",
+     "w": 3
+    },
+    {
+     "k": "블랙록",
+     "w": 2
+    },
+    {
+     "k": "KODEX",
+     "w": 3
+    },
+    {
+     "k": "TIGER",
+     "w": 3
+    },
+    {
+     "k": "월배당",
+     "w": 2
+    },
+    {
+     "k": "커버드콜",
+     "w": 3
+    },
+    {
+     "k": "ETP",
+     "w": 3
+    },
+    {
+     "k": "3배 레버리지",
+     "w": 3
+    },
+    {
+     "k": "ETN",
+     "w": 3
+    }
+   ],
+   "stocks": [
+    {
+     "name": "삼성자산운용",
+     "code": "-",
+     "role": "related"
+    },
+    {
+     "name": "미래에셋자산운용",
+     "code": "-",
+     "role": "related"
+    },
+    {
+     "name": "삼성증권",
+     "code": "016360",
+     "role": "related"
+    },
+    {
+     "name": "한국투자증권",
+     "code": "-",
+     "role": "related"
+    }
+   ]
+  },
+  {
+   "id": "kr-supply",
+   "market": "KR",
+   "cross_market": true,
+   "name": "수급 이벤트 · 증자/자사주",
+   "sector": "자본시장",
+   "summary": "유상증자·자사주 취득/소각·블록딜·지분 매각 등 주식 수급을 직접 흔드는 이벤트",
+   "keywords": [
+    {
+     "k": "유상증자",
+     "w": 3
+    },
+    {
+     "k": "무상증자",
+     "w": 3
+    },
+    {
+     "k": "유증",
+     "w": 3
+    },
+    {
+     "k": "자사주",
+     "w": 3
+    },
+    {
+     "k": "자기주식",
+     "w": 3
+    },
+    {
+     "k": "자사주 매입",
+     "w": 3
+    },
+    {
+     "k": "자사주 취득",
+     "w": 3
+    },
+    {
+     "k": "자사주 소각",
+     "w": 3
+    },
+    {
+     "k": "블록딜",
+     "w": 3
+    },
+    {
+     "k": "시간외 대량",
+     "w": 3
+    },
+    {
+     "k": "지분 매각",
+     "w": 3
+    },
+    {
+     "k": "지분 처분",
+     "w": 3
+    },
+    {
+     "k": "최대주주",
+     "w": 2
+    },
+    {
+     "k": "보호예수",
+     "w": 3
+    },
+    {
+     "k": "오버행",
+     "w": 3
+    },
+    {
+     "k": "전환사채",
+     "w": 3
+    },
+    {
+     "k": "신주인수권",
+     "w": 3
+    },
+    {
+     "k": "주식매수청구",
+     "w": 3
+    },
+    {
+     "k": "액면분할",
+     "w": 3
+    },
+    {
+     "k": "감자",
+     "w": 3
+    },
+    {
+     "k": "공개매수",
+     "w": 3
+    },
+    {
+     "k": "상장폐지",
+     "w": 3
+    },
+    {
+     "k": "스팩",
+     "w": 2
+    },
+    {
+     "k": "보통주 소각",
+     "w": 3
+    },
+    {
+     "k": "구주매출",
+     "w": 3
+    }
+   ],
+   "stocks": []
+  },
+  {
+   "id": "kr-retail",
+   "market": "KR",
+   "name": "유통 · 소비재",
+   "sector": "소비재",
+   "summary": "백화점·마트·편의점·이커머스 등 국내 유통 및 내수 소비재",
+   "keywords": [
+    {
+     "k": "유통",
+     "w": 2
+    },
+    {
+     "k": "백화점",
+     "w": 3
+    },
+    {
+     "k": "대형마트",
+     "w": 3
+    },
+    {
+     "k": "편의점",
+     "w": 3
+    },
+    {
+     "k": "이커머스",
+     "w": 3
+    },
+    {
+     "k": "홈쇼핑",
+     "w": 3
+    },
+    {
+     "k": "면세점",
+     "w": 3
+    },
+    {
+     "k": "소비 심리",
+     "w": 2
+    },
+    {
+     "k": "내수",
+     "w": 2
+    },
+    {
+     "k": "객단가",
+     "w": 3
+    },
+    {
+     "k": "기존점",
+     "w": 3
+    },
+    {
+     "k": "점포",
+     "w": 2
+    },
+    {
+     "k": "리테일",
+     "w": 2
+    },
+    {
+     "k": "소비재",
+     "w": 2
+    },
+    {
+     "k": "식음료",
+     "w": 2
+    },
+    {
+     "k": "가전 양판",
+     "w": 3
+    }
+   ],
+   "stocks": [
+    {
+     "name": "신세계",
+     "code": "004170",
+     "role": "leader"
+    },
+    {
+     "name": "이마트",
+     "code": "139480",
+     "role": "leader"
+    },
+    {
+     "name": "롯데쇼핑",
+     "code": "023530",
+     "role": "core"
+    },
+    {
+     "name": "현대백화점",
+     "code": "069960",
+     "role": "core"
+    },
+    {
+     "name": "BGF리테일",
+     "code": "282330",
+     "role": "core",
+     "alias": [
+      "BGF"
+     ]
+    },
+    {
+     "name": "GS리테일",
+     "code": "007070",
+     "role": "core"
+    },
+    {
+     "name": "쿠팡",
+     "code": "-",
+     "role": "related"
+    },
+    {
+     "name": "호텔신라",
+     "code": "008770",
+     "role": "related"
+    }
+   ],
+   "cross_market": false
+  },
+  {
+   "id": "kr-overseas",
+   "market": "KR",
+   "cross_market": true,
+   "name": "해외주식 투자 · 서학/중학개미",
+   "sector": "자본시장",
+   "summary": "국내 투자자의 해외주식 직구 동향 — 서학개미(미국)·중학개미(중국)·일학개미(일본)",
+   "keywords": [
+    {
+     "k": "서학개미",
+     "w": 3
+    },
+    {
+     "k": "중학개미",
+     "w": 3
+    },
+    {
+     "k": "일학개미",
+     "w": 3
+    },
+    {
+     "k": "해외주식",
+     "w": 3
+    },
+    {
+     "k": "해외 주식",
+     "w": 3
+    },
+    {
+     "k": "직구",
+     "w": 2
+    },
+    {
+     "k": "순매수 1위",
+     "w": 3
+    },
+    {
+     "k": "보관금액",
+     "w": 3
+    },
+    {
+     "k": "결제금액",
+     "w": 3
+    },
+    {
+     "k": "예탁결제원",
+     "w": 2
+    },
+    {
+     "k": "중지쉬촹",
+     "w": 3
+    },
+    {
+     "k": "커촹반",
+     "w": 3
+    },
+    {
+     "k": "항셍",
+     "w": 2
+    },
+    {
+     "k": "본토",
+     "w": 2
+    },
+    {
+     "k": "A주",
+     "w": 3
+    },
+    {
+     "k": "홍콩 증시",
+     "w": 3
+    },
+    {
+     "k": "도쿄 증시",
+     "w": 3
+    },
+    {
+     "k": "니케이",
+     "w": 2
+    },
+    {
+     "k": "환전",
+     "w": 2
+    }
+   ],
+   "stocks": []
+  },
+  {
+   "id": "kr-analyst",
+   "market": "KR",
+   "cross_market": true,
+   "name": "증권가 리포트 · 목표주가",
+   "sector": "자본시장",
+   "summary": "증권사 커버리지·투자의견·목표주가 조정과 하우스뷰",
+   "keywords": [
+    {
+     "k": "목표주가",
+     "w": 3
+    },
+    {
+     "k": "목표가",
+     "w": 3
+    },
+    {
+     "k": "투자의견",
+     "w": 3
+    },
+    {
+     "k": "매수 의견",
+     "w": 3
+    },
+    {
+     "k": "중립 의견",
+     "w": 3
+    },
+    {
+     "k": "커버리지",
+     "w": 3
+    },
+    {
+     "k": "리포트",
+     "w": 2
+    },
+    {
+     "k": "탑픽",
+     "w": 3
+    },
+    {
+     "k": "톱픽",
+     "w": 3
+    },
+    {
+     "k": "원픽",
+     "w": 3
+    },
+    {
+     "k": "최선호주",
+     "w": 3
+    },
+    {
+     "k": "눈높이",
+     "w": 2
+    },
+    {
+     "k": "컨센서스",
+     "w": 2
+    },
+    {
+     "k": "밸류에이션",
+     "w": 2
+    },
+    {
+     "k": "멀티플",
+     "w": 2
+    },
+    {
+     "k": "상향 조정",
+     "w": 2
+    },
+    {
+     "k": "하향 조정",
+     "w": 2
+    },
+    {
+     "k": "적정주가",
+     "w": 3
+    },
+    {
+     "k": "애널리스트",
+     "w": 3
+    },
+    {
+     "k": "모건스탠리",
+     "w": 2
+    },
+    {
+     "k": "골드만삭스",
+     "w": 2
+    },
+    {
+     "k": "JP모건",
+     "w": 2
+    },
+    {
+     "k": "BofA",
+     "w": 2
+    },
+    {
+     "k": "제프리스",
+     "w": 2
+    }
+   ],
+   "stocks": []
+  },
+  {
+   "id": "kr-policy",
+   "market": "KR",
+   "cross_market": true,
+   "name": "자본시장 제도 · 규제",
+   "sector": "정책",
+   "summary": "금융위·거래소·예탁원 등 자본시장 제도 변경과 규제 이슈",
+   "keywords": [
+    {
+     "k": "금융위",
+     "w": 3
+    },
+    {
+     "k": "금융감독원",
+     "w": 3
+    },
+    {
+     "k": "금감원",
+     "w": 3
+    },
+    {
+     "k": "거래소",
+     "w": 2
+    },
+    {
+     "k": "한국거래소",
+     "w": 3
+    },
+    {
+     "k": "예탁원",
+     "w": 3
+    },
+    {
+     "k": "예탁결제원",
+     "w": 3
+    },
+    {
+     "k": "자본시장법",
+     "w": 3
+    },
+    {
+     "k": "공매도",
+     "w": 1
+    },
+    {
+     "k": "대차",
+     "w": 1
+    },
+    {
+     "k": "대주",
+     "w": 1
+    },
+    {
+     "k": "증권거래세",
+     "w": 3
+    },
+    {
+     "k": "금투세",
+     "w": 3
+    },
+    {
+     "k": "배당소득",
+     "w": 2
+    },
+    {
+     "k": "모의거래",
+     "w": 3
+    },
+    {
+     "k": "의무화",
+     "w": 2
+    },
+    {
+     "k": "제도 개선",
+     "w": 2
+    },
+    {
+     "k": "가이드라인",
+     "w": 2
+    },
+    {
+     "k": "제재",
+     "w": 2
+    },
+    {
+     "k": "과징금",
+     "w": 3
+    },
+    {
+     "k": "불공정거래",
+     "w": 3
+    },
+    {
+     "k": "결제촉진대금",
+     "w": 3
+    },
+    {
+     "k": "증거금",
+     "w": 1
+    },
+    {
+     "k": "반대매매",
+     "w": 1
+    },
+    {
+     "k": "신용융자",
+     "w": 1
+    }
+   ],
+   "stocks": []
+  },
+  {
+   "id": "us-consumer",
+   "market": "US",
+   "name": "US Consumer · Retail",
+   "sector": "Consumer",
+   "summary": "미국 소비·유통·외식 업종과 행동주의 투자 이슈",
+   "keywords": [
+    {
+     "k": "consumer",
+     "w": 2
+    },
+    {
+     "k": "retail",
+     "w": 2
+    },
+    {
+     "k": "restaurant",
+     "w": 3
+    },
+    {
+     "k": "same-store",
+     "w": 3
+    },
+    {
+     "k": "foot traffic",
+     "w": 3
+    },
+    {
+     "k": "activist investor",
+     "w": 3
+    },
+    {
+     "k": "tender offer",
+     "w": 3
+    },
+    {
+     "k": "행동주의",
+     "w": 3
+    },
+    {
+     "k": "공개매수",
+     "w": 2
+    },
+    {
+     "k": "외식",
+     "w": 3
+    },
+    {
+     "k": "소매",
+     "w": 2
+    },
+    {
+     "k": "의류",
+     "w": 2
+    },
+    {
+     "k": "가맹",
+     "w": 2
+    },
+    {
+     "k": "객수",
+     "w": 3
+    }
+   ],
+   "stocks": [
+    {
+     "name": "Wendy's",
+     "code": "WEN",
+     "role": "leader",
+     "alias": [
+      "웬디스"
+     ]
+    },
+    {
+     "name": "Gap",
+     "code": "GAP",
+     "role": "core"
+    },
+    {
+     "name": "McDonald's",
+     "code": "MCD",
+     "role": "core",
+     "alias": [
+      "맥도날드"
+     ]
+    },
+    {
+     "name": "Starbucks",
+     "code": "SBUX",
+     "role": "core",
+     "alias": [
+      "스타벅스"
+     ]
+    },
+    {
+     "name": "Nike",
+     "code": "NKE",
+     "role": "core",
+     "alias": [
+      "나이키"
+     ]
+    },
+    {
+     "name": "Walmart",
+     "code": "WMT",
+     "role": "leader",
+     "alias": [
+      "월마트"
+     ]
+    },
+    {
+     "name": "Target",
+     "code": "TGT",
+     "role": "related"
+    },
+    {
+     "name": "Chipotle",
+     "code": "CMG",
+     "role": "related",
+     "alias": [
+      "치폴레"
+     ]
+    },
+    {
+     "name": "Lululemon",
+     "code": "LULU",
+     "role": "related",
+     "alias": [
+      "룰루레몬"
+     ]
+    }
+   ],
+   "cross_market": false
+  },
+  {
+   "id": "us-optical",
+   "market": "US",
+   "name": "Optical Networking · Interconnect",
+   "sector": "Technology",
+   "summary": "AI 데이터센터 광트랜시버·광통신 부품 및 인터커넥트 밸류체인",
+   "keywords": [
+    {
+     "k": "optical",
+     "w": 3
+    },
+    {
+     "k": "transceiver",
+     "w": 3
+    },
+    {
+     "k": "광트랜시버",
+     "w": 3
+    },
+    {
+     "k": "광모듈",
+     "w": 3
+    },
+    {
+     "k": "실리콘 포토닉스",
+     "w": 3
+    },
+    {
+     "k": "silicon photonics",
+     "w": 3
+    },
+    {
+     "k": "co-packaged optics",
+     "w": 3
+    },
+    {
+     "k": "CPO",
+     "w": 3
+    },
+    {
+     "k": "800G",
+     "w": 3
+    },
+    {
+     "k": "1.6T",
+     "w": 3
+    },
+    {
+     "k": "interconnect",
+     "w": 2
+    },
+    {
+     "k": "인터커넥트",
+     "w": 2
+    },
+    {
+     "k": "광통신",
+     "w": 3
+    },
+    {
+     "k": "네트워킹",
+     "w": 2
+    },
+    {
+     "k": "스위치 ASIC",
+     "w": 3
+    },
+    {
+     "k": "InfiniBand",
+     "w": 3
+    },
+    {
+     "k": "데이터센터 연결",
+     "w": 2
+    }
+   ],
+   "stocks": [
+    {
+     "name": "Lumentum",
+     "code": "LITE",
+     "role": "leader",
+     "alias": [
+      "루멘텀"
+     ]
+    },
+    {
+     "name": "Coherent",
+     "code": "COHR",
+     "role": "leader",
+     "alias": [
+      "코히어런트"
+     ]
+    },
+    {
+     "name": "Ciena",
+     "code": "CIEN",
+     "role": "core",
+     "alias": [
+      "시에나"
+     ]
+    },
+    {
+     "name": "Arista Networks",
+     "code": "ANET",
+     "role": "core",
+     "alias": [
+      "아리스타"
+     ]
+    },
+    {
+     "name": "Fabrinet",
+     "code": "FN",
+     "role": "core",
+     "alias": [
+      "파브리넷"
+     ]
+    },
+    {
+     "name": "Credo",
+     "code": "CRDO",
+     "role": "core",
+     "alias": [
+      "크레도"
+     ]
+    },
+    {
+     "name": "Marvell",
+     "code": "MRVL",
+     "role": "related",
+     "alias": [
+      "마벨"
+     ]
+    },
+    {
+     "name": "Astera Labs",
+     "code": "ALAB",
+     "role": "related",
+     "alias": [
+      "아스테라랩스"
+     ]
+    }
+   ],
+   "cross_market": false
+  }
+ ]
+}

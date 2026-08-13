@@ -1,0 +1,105 @@
+﻿==============================================================
+  GitHub 워크플로 파일 — 아래 선 안쪽을 통째로 복사하세요
+==============================================================
+
+붙여넣을 곳: GitHub 저장소에서
+   Add file  ->  Create new file
+   파일 이름 칸에 아래를 그대로 입력 (슬래시까지 똑같이):
+
+      .github/workflows/update.yml
+
+   슬래시를 치면 폴더가 자동으로 만들어집니다.
+   그 아래 큰 칸에 이 파일 내용을 붙여넣고 Commit 하세요.
+
+※ 이 파일(.txt)은 GitHub에 올리지 않으셔도 됩니다. 복사용입니다.
+
+--------------------- 여기서부터 복사 ---------------------
+name: 테마 레이더 자동 갱신
+
+# 언제 도는지 (GitHub 은 UTC 기준이라 한국시간 -9시간으로 적는다)
+on:
+  schedule:
+    - cron: '*/30 0-7 * * 1-5'    # 평일 KST 09:00~16:30, 30분마다 (국내 장중)
+    - cron: '0 23 * * 0-4'        # 평일 KST 08:00, 개장 전 한 번
+    - cron: '0 13-21 * * 1-5'     # 평일 KST 22:00~06:00, 1시간마다 (미국 장중)
+  workflow_dispatch:               # 저장소 Actions 탭에서 손으로 돌릴 때
+
+# Pages 배포에 필요한 권한
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# 앞 실행이 아직 돌고 있으면 기다리게 한다 (동시에 배포하면 충돌)
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: 엑셀 모듈 설치
+        run: pip install --quiet openpyxl
+
+      # 지난 실행 결과를 꺼내온다.
+      #  - data/*.json      : 이번에 수집이 실패해도 화면이 비지 않게
+      #  - notified.json    : 같은 속보를 두 번 보내지 않게
+      #  - source_map.json  : 살아있던 시세 주소를 기억해 두면 다음 실행이 빠르다
+      - name: 지난 데이터 불러오기
+        uses: actions/cache@v4
+        with:
+          path: data
+          key: theme-radar-data-${{ github.run_id }}
+          restore-keys: theme-radar-data-
+
+      - name: 뉴스 수집
+        continue-on-error: true      # 수집 실패가 배포까지 막지는 않게
+        run: python collector.py --source rss --hours 24 --xlsx --no-inject
+
+      - name: 시세 수집
+        continue-on-error: true
+        run: python quotes.py --source auto --quiet --no-inject
+
+      - name: 속보 알림
+        continue-on-error: true
+        env:
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+        run: |
+          if [ -n "$TELEGRAM_TOKEN$SLACK_WEBHOOK" ]; then
+            python notify.py --since 2
+          else
+            echo "알림 설정(Secrets)이 없어 건너뜁니다."
+          fi
+
+      - name: 사이트 만들기
+        run: python build_site.py
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: update
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    permissions:
+      pages: write
+      id-token: write
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
+
+---------------------- 여기까지 복사 ----------------------
