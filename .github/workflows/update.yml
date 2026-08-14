@@ -2,9 +2,9 @@ name: 테마 레이더 자동 갱신
 
 on:
   schedule:
-    - cron: '*/30 0-7 * * 1-5'
-    - cron: '0 23 * * 0-4'
-    - cron: '0 13-21 * * 1-5'
+    - cron: '7,37 0-7 * * 1-5'
+    - cron: '7 23 * * 0-4'
+    - cron: '17 13-21 * * 1-5'
   workflow_dispatch:
 
 permissions:
