@@ -39,7 +39,23 @@ h1 .dot{display:inline-block;width:9px;height:9px;border-radius:50%;background:v
   margin-right:8px;vertical-align:middle;animation:pulse 2s infinite}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
 .sub{color:var(--muted);font-size:13px;margin-top:4px}
-.hbtns{display:flex;gap:8px}
+.hbtns{display:flex;gap:8px;align-items:center}
+/* '지금 갱신' 버튼. 데이터가 오래되면 눈에 띄게 만든다. */
+.btn.go{text-decoration:none;display:inline-flex;align-items:center;gap:6px;
+  background:var(--s1);border-color:var(--s1);color:#fff;font-weight:600}
+.btn.go:hover{filter:brightness(1.12)}
+.btn.go.warn{background:var(--warn);border-color:var(--warn);color:#1a1a19}
+.btn.go.busy{background:var(--surface-2);border-color:var(--border);color:var(--muted);
+  pointer-events:none}
+/* 데이터가 언제 것인지 — 오래되면 색으로 알린다 */
+.age{font-weight:600}
+.age.old{color:var(--warn)}
+/* 갱신 알림 토스트 */
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);z-index:50;
+  background:var(--surface-2);color:var(--ink);border:1px solid var(--border);
+  border-radius:11px;padding:11px 18px;font-size:13.5px;box-shadow:0 8px 28px rgba(0,0,0,.38);
+  opacity:0;transition:opacity .25s}
+.toast.on{opacity:1}
 button,select,input{font-family:inherit;font-size:13px}
 .btn{background:var(--surface-2);color:var(--ink-2);border:1px solid var(--border);
   border-radius:9px;padding:7px 12px;cursor:pointer}
@@ -198,6 +214,7 @@ html[data-theme="dark"]{ --up:#ff5a5a; --down:#5a9bff; }
       <div class="sub" id="meta">데이터 로딩 중…</div>
     </div>
     <div class="hbtns">
+      <a class="btn go" id="runBtn" style="display:none" target="_blank" rel="noopener">지금 갱신</a>
       <button class="btn" id="viewBtn">표로 보기</button>
       <button class="btn" id="themeBtn">라이트 모드</button>
     </div>
@@ -271,6 +288,19 @@ const $ = s => document.querySelector(s);
     if(r.ok) d = await r.json();
   }catch(e){ /* file:// 로 열었을 때는 내장 데이터 사용 */ }
   state.data = d || EMBEDDED_DATA;
+
+  // 웹(GitHub Pages)에서 열었을 때만 갱신 버튼을 띄운다. 주소에서 계정·저장소 이름을
+  // 읽어 만들기 때문에 이 파일을 다른 저장소에 그대로 써도 알아서 맞춰진다.
+  const url = actionsUrl();
+  if(url){
+    const btn = $("#runBtn");
+    btn.href = url;
+    btn.dataset.ready = "1";
+    btn.style.display = "inline-flex";
+    btn.title = "GitHub 실행 화면이 새 탭으로 열립니다. Run workflow 를 누르면 3분쯤 뒤 이 화면이 알아서 바뀝니다.";
+    btn.onclick = () => watchForUpdate();
+  }
+
   if(!state.data){ $("#meta").textContent = "데이터 없음 — collector.py 를 먼저 실행하세요."; return; }
   render();
 })();
@@ -318,10 +348,79 @@ function render(){ renderMeta(); renderTiles(); renderThemes(); renderFeed(); re
 function renderMeta(){
   const d = state.data;
   const at = new Date(d.generated_at);
-  $("#meta").textContent =
+  const hrs = (Date.now() - at) / 3600000;
+  const stamp =
     `${at.getFullYear()}.${String(at.getMonth()+1).padStart(2,"0")}.${String(at.getDate()).padStart(2,"0")} ` +
-    `${String(at.getHours()).padStart(2,"0")}:${String(at.getMinutes()).padStart(2,"0")} 기준 · ` +
-    `최근 ${d.window_hours}시간 · 소스 ${d.source}`;
+    `${String(at.getHours()).padStart(2,"0")}:${String(at.getMinutes()).padStart(2,"0")}`;
+  // 언제 것인지를 숫자로만 보여주면 오래된 걸 눈치채기 어렵다. '몇 시간 전'을 같이 적고
+  // 2시간이 넘으면 색으로 알린다 — 지금은 사람이 직접 갱신을 눌러야 하는 구조라서.
+  $("#meta").innerHTML =
+    `${stamp} 기준 <span class="age${hrs >= 2 ? " old" : ""}">(${fmtAgo(d.generated_at)})</span>` +
+    ` · 최근 ${d.window_hours}시간 · 소스 ${esc(d.source)}`;
+
+  const btn = $("#runBtn");
+  if(btn && btn.dataset.ready === "1"){
+    btn.classList.toggle("warn", hrs >= 2);
+    if(!btn.classList.contains("busy"))
+      btn.textContent = hrs >= 2 ? "지금 갱신 (오래됨)" : "지금 갱신";
+  }
+}
+
+/* ---------- 수동 갱신 ----------
+   버튼이 GitHub 를 직접 실행시키지는 못한다. 그러려면 실행 권한이 있는 토큰을 이 페이지에
+   심어야 하는데, 공개 저장소에서는 그 토큰이 그대로 노출된다. 그래서 실행 화면을 열어주는
+   데까지만 하고, 대신 갱신이 끝났는지는 이 페이지가 대신 지켜본다 — F5 를 안 눌러도 되게. */
+function actionsUrl(){
+  const host = location.hostname.match(/^([^.]+)\.github\.io$/);
+  const repo = location.pathname.split("/").filter(Boolean)[0];
+  if(!host || !repo) return null;      // 로컬에서 연 경우엔 버튼을 숨긴다
+  return `https://github.com/${host[1]}/${repo}/actions/workflows/update.yml`;
+}
+
+function toast(msg, ms = 4000){
+  let el = $("#toast");
+  if(!el){
+    el = document.createElement("div");
+    el.id = "toast"; el.className = "toast";
+    document.body.appendChild(el);
+  }
+  el.textContent = msg;
+  requestAnimationFrame(() => el.classList.add("on"));
+  clearTimeout(el._t);
+  el._t = setTimeout(() => el.classList.remove("on"), ms);
+}
+
+/* 갱신을 누른 뒤 최대 12분간 30초마다 확인한다. 새 데이터가 오면 화면을 바로 바꾼다. */
+let watchTimer = null;
+function watchForUpdate(){
+  const before = state.data && state.data.generated_at;
+  const until = Date.now() + 12 * 60 * 1000;
+  const btn = $("#runBtn");
+  if(btn){ btn.classList.add("busy"); btn.textContent = "갱신 확인 중…"; }
+
+  clearInterval(watchTimer);
+  watchTimer = setInterval(async () => {
+    let d = null;
+    try{
+      const r = await fetch("data/news_data.json?t=" + Date.now(), {cache:"no-store"});
+      if(r.ok) d = await r.json();
+    }catch(e){ /* 잠깐 실패해도 다음 주기에 다시 본다 */ }
+
+    if(d && d.generated_at !== before){
+      clearInterval(watchTimer);
+      state.data = d;
+      if(btn){ btn.classList.remove("busy"); btn.dataset.ready = "1"; }
+      render();
+      toast(`갱신됐습니다 — 뉴스 ${d.news.length}건`, 6000);
+      return;
+    }
+    if(Date.now() > until){
+      clearInterval(watchTimer);
+      if(btn){ btn.classList.remove("busy"); btn.dataset.ready = "1"; }
+      renderMeta();
+      toast("아직 새 데이터가 안 보입니다. 실행이 끝났는지 확인해 주세요.", 7000);
+    }
+  }, 30000);
 }
 
 function renderTiles(){
