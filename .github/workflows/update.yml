@@ -1,11 +1,12 @@
-name: 테마 레이더 자동 갱신
+name: 테마분류
 
 on:
   schedule:
-    - cron: '7,37 0-7 * * 1-5'
-    - cron: '7 23 * * 0-4'
-    - cron: '17 13-21 * * 1-5'
-  workflow_dispatch:
+    # ⚠️ Cron 시간은 UTC 기준입니다 (한국시간 = UTC + 9시간)
+    - cron: '7,37 0-7 * * 1-5'    # KST 기준: 평일 09:07 ~ 16:37 (30분 간격)
+    - cron: '7 23 * * 0-4'         # KST 기준: 월~금 08:07
+    - cron: '17 13-21 * * 1-5'     # KST 기준: 평일 22:17 ~ 다음날 06:17
+  workflow_dispatch:               # 수동 실행 버튼 활성화
 
 permissions:
   contents: read
@@ -27,25 +28,25 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: install openpyxl
+      - name: Install openpyxl
         run: pip install --quiet openpyxl
 
-      - name: restore data
+      - name: Restore Data Cache
         uses: actions/cache@v4
         with:
           path: data
           key: theme-radar-data-${{ github.run_id }}
           restore-keys: theme-radar-data-
 
-      - name: collect news
+      - name: Fetch News
         continue-on-error: true
         run: python collector.py --source rss --hours 24 --xlsx --no-inject
 
-      - name: collect quotes
+      - name: Fetch Quotes
         continue-on-error: true
         run: python quotes.py --source auto --quiet --no-inject
 
-      - name: send alerts
+      - name: Send Notification
         continue-on-error: true
         env:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
@@ -55,10 +56,10 @@ jobs:
           if [ -n "$TELEGRAM_TOKEN$SLACK_WEBHOOK" ]; then
             python notify.py --since 2
           else
-            echo "no alert secrets, skipping"
+            echo "Warning: Secrets missing, skipping notification."
           fi
 
-      - name: build site
+      - name: Build Site
         run: python build_site.py
 
       - uses: actions/upload-pages-artifact@v3
